@@ -9,6 +9,7 @@ import org.bdd.tools.runners.KitRunner;
                 "pretty","html:target/cucumber-html-reports/cucumber.html",
                 "json:target/cucumber-html-reports/Main.json",
                 "rerun:target/cucumber-html-reports/rerun.txt"},
+        tags = "@ui",
         monochrome = true
 )
 public class TestRunner extends KitRunner {
