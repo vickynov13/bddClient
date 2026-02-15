@@ -1,6 +1,6 @@
 testPlatform: "Desktop" # Valid values : Desktop , Mobile
 browser: "CHROME" # FIREFOX,CHROME
-environment: "local" #Valid values : local , remote
+environment: "remote" #Valid values : local , remote
 mobileOS: "android" #Valid values : ios , android
 applicationUrl: "https://vickynov13.github.io"
 driverpath:
