@@ -1,22 +1,28 @@
 package test.stepDefinitions.ui;
 
 import io.cucumber.java.en.Given;
-import org.bdd.tools.frameworkConfig.Base;
+import io.cucumber.java.en.Then;
 import org.bdd.tools.frameworkConfig.TestContext;
 import org.bdd.tools.stepDefs.KitDesktopSdf;
-import org.openqa.selenium.support.PageFactory;
+import test.pages.HomePage;
 
 public class HomeDefinitions extends KitDesktopSdf {
     TestContext context;
+    HomePage homePage;
     public HomeDefinitions(TestContext context) {
         super(context);
         this.context = context;
-        PageFactory.initElements(driver, this);
+        homePage = new HomePage(context);
     }
 
     @Given("I open application")
     public void iOpenApplication(){
         System.out.println("Opening Application");
         driver.get(ymlConfig.getValue("applicationUrl"));
+    }
+
+    @Then("I verify App header is displayed")
+    public void iVerifyAppHeaderIsDisplayed() {
+        homePage.isAppHeaderNameDisplayed();
     }
 }

@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.bdd</groupId>
             <artifactId>javaBDDutil</artifactId>
-            <version>1.06-SNAPSHOT</version>
+            <version>1.07-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
